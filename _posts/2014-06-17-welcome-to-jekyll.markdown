@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "北京跨越式扩张电动汽车产业容量"
 date:   2014-06-17 20:57:27
-categories: jekyll update
+categories: News
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

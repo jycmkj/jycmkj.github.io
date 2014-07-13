@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
-    <meta name="viewport" content="width=device-width">
+
     <meta name="keywords" content="{{ site.keywords }}">
     <meta name="description" content="{{ site.description }}">
     <meta name="owner" content="{{ site.title }}">
@@ -13,22 +13,26 @@
 
     <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     <script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}"></head>
-
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+</head>
+<body>
     <div id="nav" class="">
         <div class="container">
 
             <form role="form" method="post" id="nav_waitlist_form" data-parsley-validate="" class="collapsed nav-form" action="/join_waitlist/" novalidate="">
-                <input type="hidden" value="6mVCSICBekkVvQK4l1gFbjPFti2wDxmH" name="csrfmiddlewaretoken">
                 <div id="nav_email_group" class="form-group">
-                    <label for="join_waitlist_email" class="sr-only">Email address</label>
                     <input type="email" placeholder="Enter email address" name="email" id="nav_email_input" data-parsley-type="email" data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="!" class="form-control input-lg waitlist-email" data-parsley-id="4360">
                     <ul class="parsley-errors-list" id="parsley-id-4360"></ul>
                 </div>
                 <button type="submit" id="nav_waitlist_button" class="btn btn-lg btn-default nav-button">下載產品目錄</button>
             </form>
             <a id="nav_icon" href="/">
-                <img data-at2x="" alt="晨美環保科技 logo"></a>
+                <img data-at2x="" alt="晨美環保科技"></a>
         </div>
     </div>
     {{ content }}
@@ -55,8 +59,8 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
+</body>
+<script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
         createMap();//创建地图
@@ -68,17 +72,17 @@
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(120.277335,31.750856);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        var point = new BMap.Point(120.277942,31.749858);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
     
     //地图事件设置函数：
     function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
+        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+        map.disableDoubleClickZoom();//禁用鼠标双击放大
+        map.disableKeyboard();//禁用键盘上下左右键移动地图，默认禁用(可不写)
     }
     
     //地图控件添加函数：
@@ -86,7 +90,7 @@
                         }
     
     //标注点数组
-    var markerArr = [{title:"江陰晨美環保科技有限公司",content:"江陰晨美環保科技有限公司<br/>Jiangyin&nbsp;Chenmei&nbsp;Environmental&nbsp;Technology&nbsp;Co.,Ltd.",point:"120.276518|31.751462",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"江陰晨美環保科技有限公司",content:"地址：江陰市錫澄路1585號<br/>電話：0510-81612868&nbsp;0510-8161285",point:"120.277897|31.749474",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
          ];
     //创建marker
     function addMarker(){

@@ -251,7 +251,7 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphiconsfonts-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
@@ -6067,19 +6067,19 @@ button.close {
   font-family: 'DIN Web';
   font-style: normal;
   font-weight: 200;
-  src: local('DIN WebLight'), local('DINWeb-Light'), url(/assets/robinhood/fonts/DINWeb-Light.woff) format('woff');
+  src: local('DIN WebLight'), local('DINWeb-Light'), url(/assets/fonts/DINWeb-Light.woff) format('woff');
 }
 @font-face {
   font-family: 'DIN Web';
   font-style: normal;
   font-weight: 300;
-  src: local('DIN Web'), local('DINWeb'), url(/assets/robinhood/fonts/DINWeb.woff) format('woff');
+  src: local('DIN Web'), local('DINWeb'), url(/assets/fonts/DINWeb.woff) format('woff');
 }
 @font-face {
   font-family: 'DIN Web';
   font-style: normal;
   font-weight: 400;
-  src: local('DIN WebMedium'), local('DINWeb-Medium'), url(/assets/robinhood/fonts/DINWeb-Medium.woff) format('woff');
+  src: local('DIN WebMedium'), local('DINWeb-Medium'), url(/assets/fonts/DINWeb-Medium.woff) format('woff');
 }
 body {
   text-align: center;

@@ -6288,7 +6288,7 @@ input.placeholder {
   margin-bottom: 0;
 }
 #waitlist_ticket {
-  background-image: url('/assets/marketing/images/waitlist/ghost_feather.gif');
+  background-image: url('/assets/images/waitlist/ghost_feather.gif');
   background-color: #f2f4f7;
   background-position: center;
   background-repeat: no-repeat;
@@ -6299,7 +6299,7 @@ input.placeholder {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   #waitlist_ticket {
-    background-image: url("/assets/marketing/images/waitlist/ghost_feather@2x.gif");
+    background-image: url("/assets/images/waitlist/ghost_feather@2x.gif");
     background-size: 95px 127px;
   }
 }
@@ -6497,13 +6497,13 @@ input.placeholder {
 .watchlist-hood-bg,
 .watchlist-robn-bg {
   background: #fff;
-  background: url(/assets/marketing/images/watchlist/phone-white/ROBN_background.png) 50% / cover;
+  background: url(/assets/images/watchlist/phone-white/ROBN_background.png) 50% / cover;
   width: 100%;
 }
 .nighttime .watchlist-hood-bg,
 .nighttime .watchlist-robn-bg {
   background: #141c26;
-  background: url(/assets/marketing/images/watchlist/phone-black/ROBN_background.png) 50% / cover;
+  background: url(/assets/images/watchlist/phone-black/ROBN_background.png) 50% / cover;
   width: 100%;
 }
 .watchlist-press {
@@ -6798,7 +6798,7 @@ input.placeholder {
   opacity: 0;
 }
 #tradescreen_blur {
-  background-image: url(/assets/marketing/images/tradescreen/TradeConfirmedBackground.png);
+  background-image: url(/assets/images/tradescreen/TradeConfirmedBackground.png);
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -7083,7 +7083,7 @@ input.placeholder {
   padding-top: 40px;
 }
 #about_team {
-  background: url(/assets/marketing/images/home/about_team.gif) 50% / cover;
+  background: url(/assets/images/home/about_team.gif) 50% / cover;
   width: 100%;
 }
 @media (min-width: 768px) {

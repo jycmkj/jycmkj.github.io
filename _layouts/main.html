@@ -23,7 +23,6 @@
 <body>
     <div id="nav" class="">
         <div class="container">
-
             <form role="form" method="post" id="nav_waitlist_form" data-parsley-validate="" class="collapsed nav-form" action="/join_waitlist/" novalidate="">
                 <div id="nav_email_group" class="form-group">
                     <input type="email" placeholder="Enter email address" name="email" id="nav_email_input" data-parsley-type="email" data-parsley-trigger="change" data-parsley-required="true" data-parsley-error-message="!" class="form-control input-lg waitlist-email" data-parsley-id="4360">
@@ -31,8 +30,9 @@
                 </div>
                 <button type="submit" id="nav_waitlist_button" class="btn btn-lg btn-default nav-button">索取產品目錄</button>
             </form>
-            <a id="nav_icon" href="/">
-                <img data-at2x="" alt="晨美環保科技"></a>
+                <a href="/" id="nav_icon">
+                    <img alt="晨美 logo" src="{{'/assets/images/logo_icon.png' | prepend: site.baseurl }}" >
+                </a>
         </div>
     </div>
     {{ content }}

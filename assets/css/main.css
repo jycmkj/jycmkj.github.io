@@ -6937,7 +6937,7 @@ input.placeholder {
   top: 0;
 }
 #header {
-  background: url(/assets/marketing/video/HomepageVideoPlaceholder.png) 50% / cover;
+  background: url(/assets/img/background.png) 50% / cover;
   width: 100%;
   overflow: hidden;
   position: relative;
